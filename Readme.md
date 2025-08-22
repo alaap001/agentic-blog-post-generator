@@ -169,10 +169,12 @@ Follow these steps to set up and run the blog post generation workflow:
 
 3.  **Load the Knowledge Base**:
     *   Ensure the `SEO_KnowledgeBase` directory is populated with the necessary documents. The application will load these into the vector database.
+    run `python src/load_knowledge_base.py` when using application for the first time so you can load everything to your vectorDB. 
+    You never have to run this again once db is created.
 
 4.  **Set Up Qdrant VectorDB**:
     *   Make sure you have a running instance of Qdrant. The application will automatically create the collection and load the data.
-    
+
     `docker pull qdrant/qdrant`
 
     `docker run -p 6333:6333 -v $(pwd)/path/to/data:/qdrant/storage qdrant/qdrant`
