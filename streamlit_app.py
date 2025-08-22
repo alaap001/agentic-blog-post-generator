@@ -2,8 +2,8 @@ import streamlit as st
 import asyncio
 import os
 from dotenv import load_dotenv
-from blog_post_generator_workflow import workflow
-from models import FinalBlogPost
+from src.blog_post_generator_workflow import workflow
+from src.models import FinalBlogPost
 
 load_dotenv()
 

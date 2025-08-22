@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 from agno.storage.sqlite import SqliteStorage
 from typing import Optional, Any
 
-from models import BlogStrategy, FinalBlogPost, SEOReport, BlogDraft
-from agents import (
+from .models import BlogStrategy, FinalBlogPost, SEOReport, BlogDraft
+from .agents import (
     content_team,
     editor_fact_checker_team,
     seo_optimizer,
@@ -105,39 +105,6 @@ async def blog_post_generation_workflow(
         first_draft = draft_response.content
         set_cached_data(workflow, "first_draft", idea, first_draft)
         print("   - First draft created successfully.")
-
-#     first_draft= BlogDraft(draft="""
-# # The AI Revolution in Content Creation
-
-# Artificial intelligence (AI) is rapidly transforming the landscape of content creation, moving beyond mere automation to reshape how we conceive, produce, and consume content. This revolution promises enhanced efficiency, personalized experiences, and entirely new creative avenues. From generating drafts to optimizing strategies, AI is not just a tool but a partner in the content development process.
-
-# ## Understanding the Current Landscape of AI in Content Creation
-
-# AI's presence in content creation is already significant. We're seeing advanced natural language generation (NLG) tools capable of drafting articles, reports, and marketing copy. AI is also deeply embedded in content optimization, assisting with SEO, keyword research, and audience analysis. This shift is highlighted by a Forbes article emphasizing AI's role in automating repetitive tasks and generating ideas, though human oversight remains crucial for quality and ethical considerations.
-
-# ## AI-Powered Tools and Their Impact on Content Production
-
-# Today, a plethora of AI-powered tools are available to content creators. These tools range from AI writing assistants like Jasper.ai and Copy.ai to sophisticated platforms that analyze content performance and suggest improvements. HubSpot discusses the practical applications of AI in content marketing, including SEO optimization, content generation, and performance analysis, underscoring AI's ability to enable more personalized and efficient content strategies.
-
-# ## Beyond Automation: AI's Role in Enhancing Creativity and Strategy
-
-# AI's impact extends far beyond simple automation. It's becoming a catalyst for creativity, assisting with brainstorming, offering new perspectives, and even generating unique artistic outputs. A New York Times article explores this creative potential, showcasing AI-generated art and challenging traditional notions of authorship. Furthermore, AI is revolutionizing content strategy by providing data-driven insights for content planning and hyper-personalization, as seen in research from the Journal of Marketing on how AI algorithms can deliver highly tailored content experiences.
-
-# ## The Evolving Role of Content Creators in an AI-Driven World
-
-# In this AI-driven world, content creators are not being replaced but are evolving. Their role is shifting towards higher-level strategic thinking, critical evaluation of AI-generated content, and prompt engineering—the art of guiding AI to produce desired outputs. Human-AI collaboration is becoming the norm, freeing up creators to focus on nuance, creativity, and ethical considerations, as noted by Forbes. This partnership leads to increased efficiency and new creative possibilities.
-
-# ## Ethical Considerations: Navigating the Complexities of AI-Generated Content
-
-# The rise of AI in content creation brings crucial ethical considerations. Concerns around intellectual property, misinformation, deepfakes, copyright, and algorithmic bias are paramount. An Accenture report on ethical implications stresses the need for responsible AI development and clear guidelines for AI-generated content. As AI becomes more sophisticated, addressing these challenges responsibly is vital for maintaining trust and credibility.
-
-# ## Future Outlook: What's Next for AI in Content Creation?
-
-# The future of AI in content creation promises even more sophisticated models, greater personalization, and continued emphasis on ethical AI development. Expect to see AI seamlessly integrated into every stage of the content workflow, from initial concept to distribution and analysis. The potential for AI to democratize content creation, making advanced tools accessible to more individuals, is also a significant aspect of the future.
-
-# ## Conclusion: Embracing the Future of Content with AI
-
-# AI is not merely a technological advancement; it's a fundamental shift in how content is created and consumed. By understanding its capabilities, navigating its ethical challenges, and embracing human-AI collaboration, content creators can unlock unprecedented efficiency and creativity. The future of content is undeniably intertwined with AI, offering exciting possibilities for innovation and engagement.""")
 
     # 3. SEO Optimization
     print("\nStep 3: Optimizing for SEO...")
