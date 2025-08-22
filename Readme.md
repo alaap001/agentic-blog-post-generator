@@ -30,8 +30,8 @@ This project is more than just a content generator; it's a demonstration of a pr
 ## Table of Contents
 
 - [See it in Action: The Streamlit UI](#see-it-in-action-the-streamlit-ui)
-- [Key Features](#key-features)
-- [Why Agno?](#why-agno)
+- [Key Features](#key-features)       
+- [Why Agno?](#why-agno-and-not-langgraph)
 - [Application Flow](#application-flow)
 - [Architectural Choices and Rationale](#architectural-choices-and-rationale)
 - [The Team of AI Agents](#the-team-of-ai-agents)
@@ -119,12 +119,6 @@ A coordinated team of three agents that work together to produce the first draft
 
 ### Editor & Fact-Checker Team
 This team is responsible for polishing the draft and ensuring its accuracy.
-
-## Agent Collaboration and Orchestration
-
-The main `blog_post_generation_workflow` function orchestrates all collaboration, acting as a central controller that invokes each agent or team in sequence and manages the data flow. 
-
-The `Team` class provides powerful sub-workflow management. For example, the `Content Team` runs in `coordinate` mode, where a coordinator model ensures the `Research Analyst`, `Outline Generator`, and `Content Writer` execute in the correct order.
 
 ## Tools Integration
 
