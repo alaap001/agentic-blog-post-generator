@@ -1,0 +1,74 @@
+[
+  {
+    "content": "SEO, or search engine optimization, helps search engines understand your content and assists users in finding your site, influencing their decision to visit through search results. Websites adhering to Google's Search Essentials are more likely to appear in search results, and SEO focuses on improving a site's presence in Search. This guide offers common and effective improvements, emphasizing that there are no secret methods for automatic top rankings, and some suggestions may not apply to every business. Following best practices aims to facilitate crawling, indexing, and understanding of content by search engines, not just Google."
+  },
+  {
+    "content": "Google operates as a fully automated search engine, utilizing programs called crawlers to continuously explore the web and add pages to its index. Typically, website owners only need to publish their site online, as the majority of listed sites are automatically discovered and indexed through this crawling process. For a deeper understanding, documentation is available on how Google discovers, crawls, and serves web pages. If time is limited or a professional is preferred, guidance is provided on what to consider when hiring an SEO specialist."
+  },
+  {
+    "content": "Changes made to a website require time to be reflected in Google's search results, with some taking a few hours and others several months. Generally, it is advisable to wait a few weeks to assess the impact of these changes on Google Search results. Not all website modifications will lead to a noticeable effect, and if results are unsatisfactory and business strategies permit, iterative changes should be attempted to observe any difference."
+  },
+  {
+    "content": "Before implementing any content discovery strategies, verify if Google has already indexed your content by using the `site:` search operator (e.g., `site:wikipedia.org`). If your site appears in the results, it is indexed. If not, review the technical requirements to ensure no technical barriers prevent your site from appearing in Google Search. Google primarily discovers pages through links from other already-crawled pages, which can occur naturally over time or be encouraged by promoting your site. Optionally, submitting a sitemap, a file containing all important URLs on your site, can aid discovery, with some content management systems automating this process. However, this is not mandatory, and the initial focus should be on ensuring people are aware of your site."
+  },
+  {
+    "content": "When Google crawls a page, it should ideally perceive it identically to an average user, necessitating access to the same resources as a user's browser. If crucial components like CSS and JavaScript are hidden, Google may struggle to comprehend the pages, potentially affecting their appearance or ranking in search results. For pages with location-dependent information, ensure satisfaction with the content Google sees from its crawler's typical location, which is generally the US. The URL Inspection Tool in Search Console can be used to verify how Google views your page."
+  },
+  {
+    "content": "It may be necessary to prevent certain parts or the entirety of your site from appearing in search results, such as personal or sensitive content. Google offers various methods to opt out of URL crawling and indexing. To block specific files, directories, or your entire site from Google Search, consult the guide on preventing content from appearing in search results."
+  },
+  {
+    "content": "Organizing your site logically during setup or redesign can help search engines and users understand page relationships. While beneficial for larger websites in the long term, search engines generally comprehend pages regardless of current organization. Therefore, immediate reorganization is not always necessary."
+  },
+  {
+    "content": "Descriptive URLs are beneficial as parts of the URL can appear as breadcrumbs in search results, aiding users in determining a result's relevance. Google automatically generates breadcrumbs from URL words, but they can also be influenced using structured data. Including useful words in the URL, such as `https://www.example.com/pets/cats.html`, is more helpful than random identifiers like `https://www.example.com/2/6772756D707920636174`."
+  },
+  {
+    "content": "For websites with thousands of URLs, content organization can impact Google's crawling and indexing. Grouping similar topics into directories (folders) helps Google understand the frequency of URL changes within individual directories. For instance, content in a 'policies' directory might change infrequently, while content in a 'promotions' directory could change often, allowing Google to adjust crawl frequencies accordingly. Further guidance on search-friendly site structures, particularly relevant for larger e-commerce sites, is available."
+  },
+  {
+    "content": "Duplicate content, where the same information appears under different URLs, is not a spam policy violation but can negatively impact user experience and lead to inefficient crawling by search engines. Search engines select a single canonical URL for each piece of content. While Google attempts to automatically canonicalize URLs, specifying a canonical version yourself is recommended for better control. Ideally, each piece of content should be accessible via only one URL to avoid user confusion. If multiple pages contain identical information, consider implementing a redirect from non-preferred URLs to the most representative one. If redirection is not feasible, use the `rel=\"canonical\"` link element. However, search engines are often capable of handling this automatically."
+  },
+  {
+    "content": "Creating compelling and useful content significantly impacts a website's search presence. Such content is typically easy to read, well-organized, and free of errors, with long sections broken into paragraphs and headings for navigation. Content should be unique, avoiding copying from other sources, and based on original knowledge. Regular updates are crucial to maintain relevance, and outdated content should be deleted. The content must be helpful, reliable, and people-first, with expert or experienced sources enhancing credibility."
+  },
+  {
+    "content": "Anticipating user search terms is crucial for content creation. Users with varying levels of topic knowledge may use different keywords; for example, some might search for \"charcuterie\" while others search for \"cheese board.\" Writing with these potential differences in mind can positively affect search performance. However, it's not necessary to predict every possible search variation, as Google's language matching systems are sophisticated enough to understand page relevance to many queries, even without exact term usage."
+  },
+  {
+    "content": "While advertisements are a common part of the internet, they should not be overly distracting or impede users from accessing content. Intrusive ads or interstitial pages that make website usage difficult should be avoided to ensure a positive user experience."
+  },
+  {
+    "content": "Links are vital for connecting users and search engines to other parts of your site or relevant external pages. Google discovers a vast majority of new pages through links, making them a crucial resource for content discovery and potential inclusion in search results. Additionally, links can add value by corroborating information and providing further context to users and Google. When linking to external content, ensure the resource is trustworthy. If not, or if linking to user-generated content, use a `nofollow` or similar annotation to prevent search engines from associating your site with the linked content, which helps avoid negative ranking consequences and discourages spam."
+  },
+  {
+    "content": "Link text, also known as anchor text, is the visible part of a link that informs users and Google about the linked page's content. Using appropriate anchor text allows users and search engines to understand the linked pages before visiting them."
+  },
+  {
+    "content": "The title link, serving as the headline in search results, helps users decide which result to click. Google generates this title from various sources, including the text within the `<title>` element and other page headings. This title text also appears in browser tabs and bookmarks. Content management systems often automate the conversion of written titles into the `<title>` element. Effective title links are unique to each page, clear, concise, and accurately describe the page's content, potentially including the website name, business location, and specific page offerings. Detailed documentation on title links provides further tips for creating effective titles and influencing search result appearance."
+  },
+  {
+    "content": "Below the title link, a search result typically includes a snippet, which is a description of the target page designed to help users decide whether to click. This snippet is derived from the actual content of the linked page, giving website owners full control over the words used. Occasionally, the snippet may come from the meta description tag, which is a concise, one or two-sentence summary of the page. An effective meta description is brief, unique to its page, and highlights the most relevant points. Resources are available for inspiration on writing compelling meta descriptions."
+  },
+  {
+    "content": "Adding and optimizing images is crucial for visual searchers, as images can be a primary discovery point for websites, such as recipe blogs found through searches for food photos. Ensure images are discoverable and understandable by both people and search engines."
+  },
+  {
+    "content": "High-quality images provide users with sufficient context and detail to match their search intent, such as distinguishing flower types. Sharp and clear images should be placed near relevant text, as this proximity helps Google understand the image's content and its context within the page. For example, embedding a yarn shop photo near its location, description, and review helps Google and users associate the image with the page's topic."
+  },
+  {
+    "content": "Alt text, a concise yet descriptive piece of text, explains the relationship between an image and its surrounding content, aiding search engines in understanding the image's subject and context. Writing effective alt text is important for SEO. It can be added via the `alt` attribute of the `img` element in HTML, or through a content management system's image description feature during upload. Resources are available for guidance on writing good alt text and implementing it."
+  },
+  {
+    "content": "For websites primarily featuring individual videos, optimizing them can lead to discovery through video results in Google Search. Many best practices for images and text also apply to videos: create high-quality video content, embed videos on standalone pages near relevant text, and write descriptive titles and descriptions. For video-centric sites, further optimization techniques for search engines are available."
+  },
+  {
+    "content": "Effective promotion of new content accelerates its discovery by interested audiences and search engines. This can be achieved through various methods, including social media, community engagement, online and offline advertising, and word-of-mouth. Word-of-mouth is particularly effective and lasting, where satisfied users recommend your site to others. This often requires initial investment in other promotional activities like community engagement. Google for Creators offers resources on audience building and engagement. Offline promotion, such as listing your website URL on business cards and marketing materials, can also be beneficial. Sending recurring newsletters to your audience about new content can also be effective. However, over-promotion can lead to user fatigue and may be perceived by search engines as manipulation of search results, potentially harming your site's ranking."
+  },
+  {
+    "content": "As SEO evolves, certain past practices and misconceptions become irrelevant. It's crucial to focus on what genuinely matters for SEO, aligning strategies with business goals. For instance, Google Search does not use the keywords meta tag. Keyword stuffing, which involves excessive repetition of keywords, is detrimental to user experience and violates Google's spam policies. While keywords in domain names or URL paths have minimal direct ranking impact beyond appearing in breadcrumbs, the choice of domain name should prioritize business relevance and user recognition. The TLD (e.g., .com, .guru) primarily matters for country-specific targeting; otherwise, Google Search does not favor particular TLDs. Content length alone is not a ranking factor, though varied vocabulary naturally increases keyword presence. The choice between subdomains and subdirectories should be based on business and site management considerations. PageRank is just one of many ranking signals, and duplicate content, while inefficient, does not incur a manual penalty unless it involves copying others' content. The semantic order of headings is beneficial for screen readers but not a direct ranking factor for Google Search, which often cannot rely on strict HTML semantics. There is no ideal number of headings, but excessive use should be avoided. E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) is not a direct ranking factor but a framework for evaluating content quality."
+  },
+  {
+    "content": "To continue your SEO journey, begin by setting up a Google Search Console account to monitor and optimize your website's performance on Google Search, learning which reports to prioritize. Focus on maintaining your website's SEO long-term, including advanced tasks like site moves or managing multilingual sites. Enhance your site's appearance in Google Search results by implementing valid structured data, which can qualify your pages for special features like review stars and carousels. Explore the gallery of search result types to see what your page can be eligible for. Stay informed and ask questions by following the Google Search Central blog for updates, connecting on LinkedIn and X (Twitter), participating in the Google Search Central Help Forum for community support, and watching helpful videos on the Google Search Central YouTube Channel."
+  }
+]

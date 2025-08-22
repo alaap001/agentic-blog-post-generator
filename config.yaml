@@ -1,0 +1,51 @@
+global:
+  debug_mode: true
+  cache_tools: true
+  add_datetime_to_instructions: true
+  add_location_to_instructions: true
+
+models:
+  default_llm: &default_llm
+    id: "google/gemini-2.5-flash"
+    max_tokens: 16384
+    temperature: 0.7
+  team_coordinator_llm: &team_coordinator_llm
+    id: "openai/gpt-4.1"
+    max_tokens: 16384
+    temperature: 0.2
+  content_writer_llm: &content_writer_llm
+    id: "z-ai/glm-4.5"
+    max_tokens: 16384
+    temperature: 1.0
+
+agents:
+  topic_strategist:
+    model: *default_llm
+  research_analyst:
+    model: *default_llm
+  outline_generator:
+    model: *default_llm
+  content_writer:
+    model: *content_writer_llm
+  seo_optimizer:
+    model: *team_coordinator_llm
+  editor:
+    model: *default_llm
+  fact_checker:
+    model: *default_llm
+
+teams:
+  content_team:
+    model: *team_coordinator_llm
+  editor_fact_checker_team:
+    model: *team_coordinator_llm
+
+storage:
+  table_name: "blog_post_generator_cache"
+  db_file: "tmp/blog_post_generator.db"
+
+qdrant:
+  url: "http://localhost:6333" 
+  api_key: "tech9"
+  path: "SEO_KnowledgeBase"
+  collection_name: "seo_knowledge"

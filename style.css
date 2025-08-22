@@ -1,0 +1,48 @@
+/* General App Styling */
+.stApp {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background-color: #262626;
+}
+
+/* Main Content Styling */
+.css-18e3th9 {
+    padding: 2rem;
+}
+
+/* Button Styling */
+.stButton>button {
+    border-radius: 20px;
+    border: 1px solid #4a4a4a;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.stButton>button:hover {
+    background-color: #4a4a4a;
+    transform: scale(1.05);
+}
+
+/* Primary Button Styling */
+.stButton>button.primary {
+    background-color: #ff4b4b;
+    border: none;
+    font-weight: bold;
+}
+
+.stButton>button.primary:hover {
+    background-color: #ff6b6b;
+}
+
+/* Input Fields */
+.stTextInput>div>div>input {
+    background-color: #262626;
+    color: #ffffff;
+    border-radius: 10px;
+}
