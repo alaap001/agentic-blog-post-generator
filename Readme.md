@@ -32,6 +32,7 @@ This project is more than just a content generator; it's a demonstration of a pr
 - [See it in Action: The Streamlit UI](#see-it-in-action-the-streamlit-ui)
 - [Key Features](#key-features)       
 - [Why Agno?](#why-agno-and-not-langgraph)
+- [Workflow Architecture](#workflow-architecture)
 - [Application Flow](#application-flow)
 - [Architectural Choices and Rationale](#architectural-choices-and-rationale)
 - [The Team of AI Agents](#the-team-of-ai-agents)
@@ -52,6 +53,9 @@ While CrewAI and LangGraph are powerful, Agno was chosen for its unique combinat
    3. **Simplified Development**: Unlike LangChain's manual component alignment, Agno's integrated nature streamlines complex workflow development. Native support for Agentic RAG and clear orchestration models made rapid implementation possible.
 
    While you could build similar functionality with LangGraph, Agno's speed, efficiency, and production focus made it optimal for this project.
+
+## Workflow Architecture
+![Architecture](workflow_images/mermaid.png)
 
 ## Application Flow
 
