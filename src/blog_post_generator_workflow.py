@@ -36,7 +36,6 @@ tracer_provider.add_span_processor(
 )
 trace_api.set_tracer_provider(tracer_provider=tracer_provider)
 
-# Start instrumenting agno
 AgnoInstrumentor().instrument()
 
 
@@ -164,7 +163,7 @@ workflow = Workflow(
         db_file=storage_config.get("db_file", "tmp/blog_post_generator.db"),
         mode="workflow_v2",
     ),
-    workflow_session_state={},  # Initialize empty session state for caching
+    workflow_session_state={}, 
 )
 
 if __name__ == "__main__":

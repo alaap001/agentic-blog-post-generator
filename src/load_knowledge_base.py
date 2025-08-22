@@ -3,6 +3,8 @@ from agno.embedder.openai import OpenAIEmbedder
 from agno.knowledge.json import JSONKnowledgeBase
 from agno.vectordb.qdrant import Qdrant
 from agno.vectordb.search import SearchType
+from dotenv import load_dotenv
+load_dotenv()
 
 # Load configuration from YAML file
 with open("config.yaml", "r") as f:
