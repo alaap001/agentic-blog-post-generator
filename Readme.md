@@ -138,6 +138,8 @@ The `SEO Optimizer` demonstrates **Agentic Retrieval-Augmented Generation (RAG)*
 
 *   **Observability**: LangSmith integration via the OpenTelemetry SDK provides detailed workflow tracing. You can monitor each agent's performance, tool usage, and timing. This is invaluable for debugging, optimization, and understanding system behavior.
 
+    ![LangSmith Tracing](workflow_images/Langsmith.png)
+
 *   **Configurability**: The `config.yaml` file lets you adjust nearly everything without code changes, from model selection (supporting **Gemini 2.5 Flash**, **GLM-4.5**, **GPT-4.1**, etc.) and agent parameters to global settings like caching and API keys.
 
 ## How to Install and Use
